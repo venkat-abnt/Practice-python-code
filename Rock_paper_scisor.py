@@ -7,7 +7,11 @@ Paper beats Rock
 '''
 import random
 Game_list = ['Rock', 'scissors', 'paper']
-Game_On = True
+player1_score = 0
+player2_score = 0
+round_num = 1
+#Game_On = True
+MAX_POINTS = int(input('for how many points, you guys want to play the Game: '))
 
 '''function to deide the winner'''
 def game_func(player1, player2):
@@ -26,8 +30,9 @@ def game_func(player1, player2):
     elif player1 == 'paper' and player2 == 'scissors':
         return 'Player2 wins'
 
-while Game_On:
+while player1_score < MAX_POINTS and player2_score < MAX_POINTS:
 	random.shuffle(Game_list)
+	print(f' Round Number {round_num} : ')
 	choice1 = int(input('Player1, please choose b/w (0,1,2): '))
 	choice2 = int(input('Player2, please choose b/w (0,1,2): '))
 	player1 = Game_list[choice1]
@@ -38,12 +43,31 @@ while Game_On:
 	Call the game function defined above
 	'''
 	print('Executing the game function')
+	
 	result = game_func(player1, player2)
 	print(result)
+	if result == 'Player1 wins':
+		player1_score += 1
+	elif result == 'Player2 wins':
+		player2_score += 1
+	round_num += 1
+	print(f'Player1 score is : {player1_score}')
+	print(f'Player2 score is : {player2_score}')
+	print('\n')
 
-	ANSWER = input('do you want to play again: ')
-	if ANSWER not in ['YES', 'Yes', 'yes', 'Y', 'y']:
-		Game_On = False
+'''
+Based on the final score deciding the winner of the Game
+'''
+if player1_score > player2_score:
+	print('Final Winner is PLAYER-1')
+else:
+	print('Final Winner is PLAYER-2')
+
+	
+
+	#ANSWER = input('do you want to play again: ')
+	#if ANSWER not in ['YES', 'Yes', 'yes', 'Y', 'y']:
+	#	Game_On = False
 
 
 
