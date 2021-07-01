@@ -1,7 +1,7 @@
 #Palandrome
 
 '''
-This will tell  you give string is a plandrome or not
+This will tell  you give string is a plandrome or not for a given string r a sentence
 '''
 
 WORD = input('Enter a string of your choice: ')
