@@ -55,9 +55,9 @@ while player1_score < MAX_POINTS and player2_score < MAX_POINTS:
 	print(f'Player2 score is : {player2_score}')
 	print('\n')
 
-'''
+"""
 Based on the final score deciding the winner of the Game
-'''
+"""
 if player1_score > player2_score:
 	print('Final Winner is PLAYER-1')
 else:
