@@ -21,3 +21,13 @@ while item < len(result):
 	print(result[item].getText())
 	item += 1
 
+"""
+incase if you want to write the results/extracts from the webpage to a file
+you can use the below code to do so.
+if you dont want it into a file, you can ignore this below section of code
+"""
+FILE_NAME = input('Enter the filename to store the content of the webpage: ')
+for i in range(len(Title)):#as this Title is a beautiful soup type object, we need to loop through it as it may have many items depending upon the webpage
+	with open(FILE_NAME,'a') as file:
+		file.write('\n' + Title[i].getText())
+
