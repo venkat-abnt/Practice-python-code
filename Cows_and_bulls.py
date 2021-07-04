@@ -1,6 +1,6 @@
 '''
 This Program randomly generates a desired length of number.
-and then generates a randomd password which is a blend of alpha numeric and some special characters
+and then user has to guess the number, if he guess it correctly he will win
 '''
 import random
 
@@ -41,5 +41,7 @@ while True:
 	attempts += 1
 	if COWS == len(GEN_NUM):
 		break
+	else:
+		print('WRONG GUESS, TRY AGAIN \n')
 print(f'You took {attempts} attempts to make the correct guess')
 print(f'By the end of the game you have {cows} cows & {bulls} bulls') #Total cows and bulls in the entire game

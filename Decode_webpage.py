@@ -1,6 +1,6 @@
 '''This program is not executing in the command line but executing in the Jupiter note book.
-This Program asks user for desired length of their passwords
-and then generates a randomd password which is a blend of alpha numeric and some special characters
+After installing requests, bs4 and lxml packages/libraries in command line using pip install, this got executed in command line.
+This Program asks decodes a web page and get you the titles or items/elements associated to a particular class of the webpage 
 '''
 import requests, bs4, lxml
 link = 'https://www.deccanchronicle.com/'
