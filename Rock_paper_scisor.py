@@ -42,7 +42,7 @@ while player1_score < MAX_POINTS and player2_score < MAX_POINTS:
 	'''
 	Call the game function defined above
 	'''
-	print('Executing the game function')
+	#print('Executing the game function')
 	
 	result = game_func(player1, player2)
 	print(result)
