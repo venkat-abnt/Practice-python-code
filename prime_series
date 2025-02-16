@@ -1,4 +1,17 @@
 '''
 this program is to give all the prime numbers from start to till the given number
 '''
-
+given_number = 100#you can make it dynamic
+my_set = set() # This is to store the prime numbers to avaoid storing duplicate prime numbers
+for num in range(2,given_number+1):
+    #print(f"outer for: {num}" )
+    #print("\n")
+    
+    for i in range(2,num):
+        #print("inner for")
+        if num%i==0:
+            print(f'{num} is not prime')
+            break
+        #print(i)
+    else: my_set.add(num)
+    print('----\n')
