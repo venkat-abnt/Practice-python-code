@@ -21,7 +21,7 @@ def prime_fun(user_num):
 
 '''
 In this am directly deciding based on the divisibility of the number
-if the number id divisible by nay of the number in the range then not a prime
+if the number id divisible by nay of the number in the range then not a prime.
 '''
 
 def prime_func_method2(user_num):
